@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contoh Ambil IP (Dewasa)</title>
+  <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Masuk — Konfirmasi Usia</h1>
+
+    <div id="notice" class="card">
+      <p>Halaman ini meminta persetujuan Anda untuk membaca alamat IP perangkat Anda. Hanya untuk pengunjung <strong>dewasa</strong> (18+).</p>
+      <label>
+        <input type="checkbox" id="isAdult" />
+        Saya berusia 18 tahun atau lebih dan memberikan persetujuan untuk mengambil IP saya.
+      </label>
+      <div class="actions">
+        <button id="getIpBtn" disabled>Ambil IP saya</button>
+      </div>
+      <p class="small">Lihat <a href="/privacy.html">Kebijakan Privasi</a> untuk detail penyimpanan & penghapusan data.</p>
+    </div>
+
+    <div id="result" class="card hidden">
+      <h2>Hasil</h2>
+      <pre id="resultText">Belum ada aksi.</pre>
+      <button id="clearBtn">Hapus tampilan</button>
+    </div>
+  </main>
+
+  <script src="/public/index.js"></script>
+</body>
+  </html>
